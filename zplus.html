@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Zplus Global Holidays</title>
+  <link rel="stylesheet" href="zplus.css">
+  <script type="text/javascript" src="zplus.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="#"> ZPLUS GLOBAL HOLIDAYS</a></div>
+      <ul class="links">
+        <li><a href="home">Home</a></li>
+        <li><a href="plans">plans</a></li>
+        <li><a href="contact">Contacts</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="http://127.0.0.1:5500/HTML/try.html">Login</a></li>
+      </ul>
+      <a href="#" class="action_btn">Get started</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="dropdown_menu">
+      <li><a href="home">Home</a></li>
+      <li><a href="plans">plans</a></li>
+      <li><a href="contact">Contacts</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="#" class="action_btn">Get started</a></li>
+    </div>
+  </header>
+  <main>
+
+    <section id="zplus">
+      <h1>ZPLUS GLOBAL HOLIDAYS</h1>
+      <div class="container">
+        <header>FLIGHT DETAILS</header>
+        <form action="#">
+          <div class="form-first">
+            <div class="booking-details">
+
+
+              <div class="fields">
+                <div class="input-field">
+                  <label>From</label>
+                  <input type="text" placeholder="From" required>
+                  <div class="autobox">
+                    <li>"Login Form in HTML & CSS"</li>
+                    <li>"How to learn HTML & CSS"</li>
+                    <li>"How to learn JavaScript"</li>
+                    <li> "How to became Freelancer"</li>
+                    <li> "How to became Web Designer"</li>
+
+                  </div>
+                </div>
+                <div class="input-field">
+                  <label>Where to?</label>
+                  <input type="text" placeholder="Where to?" required>
+                </div>
+                <div class="input-field">
+                  <label>Date</label>
+                  <input type="date" placeholder="Date" required>
+                </div>
+                <div class="input-field">
+                  <label>Return</label>
+                  <input type="date" placeholder="Return" required>
+                </div>
+
+                <div class="input-field">
+                  <label>Passengers</label>
+                  <input type="number" placeholder="Passengers" required>
+                </div>
+                <div class="input-field">
+                  <label></label>
+
+                </div>
+                <div class="input-field">
+                  <label></label>
+                  
+                </div>
+                <button class="nextBtn">
+                  <span class="btnText">Submit</span>
+                </button>
+
+
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </section>
+
+    <section id="socials">
+
+      </div>
+      <div class="wrapper">
+
+        <div class="social_btn" onclick="location.href='https://www.facebook.com/'">
+          <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+          <span>Facebook</span>
+
+
+        </div>
+        <div class="social_btn" onclick="location.href='https://www.instagram.com/'">
+          <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+          <span>Instagram</span>
+        </div>
+        <div class="social_btn" onclick="location.href='https://www.twitter.com/'">
+          <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+          <span>Twitter</span>
+        </div>
+        <div class="social_btn" onclick="location.href='https://www.whatsapp.com/'">
+          <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <span>Whatsapp</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classicList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+    
+
+  </script>
+</body>
+
+</html>
